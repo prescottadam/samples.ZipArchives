@@ -1,0 +1,11 @@
+﻿<Window x:Class="samples.ZipArchives.ExtractFileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ExtractFileWindow" Height="300" Width="300">
+    <Grid>
+        <DockPanel>
+            <Label DockPanel.Dock="Top">Double-click the file you wish to extract.</Label>
+            <ListBox ItemsSource="{Binding}" MouseDoubleClick="OnDoubleClick"></ListBox>
+        </DockPanel>
+    </Grid>
+</Window>

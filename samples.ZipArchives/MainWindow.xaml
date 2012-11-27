@@ -1,0 +1,25 @@
+﻿<Window x:Class="samples.ZipArchives.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="SkyBlue" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="Padding" Value="20" />
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <StackPanel>
+            <Button Click="OnExtractArchive">Extract an entire archive</Button>
+            <Button Click="OnExtractFile">Extract a single file</Button>
+            <Button Click="OnCreateArchive">Create an archive from a directory</Button>
+            <Button Click="OnAddFileToArchive">Add a single file to an archive</Button>
+        </StackPanel>
+    </Grid>
+</Window>
